@@ -43,10 +43,11 @@
     outline: none;
     cursor: pointer;
     padding: 12px 12px 12px 42px;
+    &:focus {
+        border-color: var(--accent-color);}
+    &:focus + .icon-of-form {
+        fill: var(--accent-color);
 }
-
-.input-form:focus {
-    border-color: var(--accent-color);
 }
 
 .icon-of-form {
@@ -55,10 +56,6 @@
     left: 12px;
     fill: var(--primary-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-form:focus+.icon-of-form {
-    fill: var(--accent-color);
 }
 
 .text-container {
@@ -81,21 +78,18 @@
     cursor: pointer;
     color: var(--secondary-text-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+        border-color: var(--accent-color);}
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba (117, 117, 117, 0.5);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 
 .comment:focus {
-    border-color: var(--accent-color);
-}
-
-.comment::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba (117, 117, 117, 0.5);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.comment:focus::placeholder {
     color: var(--accent-color);
 }
 
@@ -113,6 +107,10 @@
 
 .chkbox-input {
     appearance: none;
+    &:checked + .check-box {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+}
 }
 
 .chk-box-link {
@@ -136,11 +134,6 @@
     padding: 0;
 }
 
-.chkbox-input:checked+.check-box {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
 .check-icon {
     width: 16px;
     height: 15px;
@@ -158,8 +151,7 @@
     padding: 10px 55px;
     min-width: 200px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: #188ce8;
 }
-
-.send-button:hover {
-    background-color: #188ce8;
 }
