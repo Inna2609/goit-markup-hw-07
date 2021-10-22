@@ -63,13 +63,9 @@
   color: var(--primary-white-color);
 }
 .footer-icon-link {
-  width: 100%;
-  height: 100%;
-  display: block;
+  @include block($block, $w: 100%, $h: 100%);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centered();
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--temporary-function);
   &:hover,

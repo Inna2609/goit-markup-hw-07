@@ -25,10 +25,8 @@
 }
 
 .footer-label {
-  font-weight: 400;
-  font-size: 12px;
+  @include font(400, 12px, 0.01em);
   line-height: 1.17;
-  letter-spacing: 0.01em;
   color: var(--secondary-text-color);
   margin-bottom: 4px;
 }
@@ -100,11 +98,7 @@
 
 .checkbox-label {
   cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  @include centered();
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -131,9 +125,7 @@
 }
 
 .check-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centered();
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -150,10 +142,8 @@
 
 .send-button {
   font-style: inherit;
-  font-weight: 700;
-  font-size: 16px;
+  @include font(700, 16px, 0.06em);
   line-height: 1.87;
-  letter-spacing: 0.06em;
   box-shadow: var(--box-shadow-btn);
   border-radius: var(--btn-b-radius);
   border: 0;

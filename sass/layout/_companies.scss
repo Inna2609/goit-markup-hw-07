@@ -1,8 +1,6 @@
 .company-header {
-  font-weight: 700;
-  font-size: 36px;
+  @include font(700, 36px, 0.03em);
   line-height: 1.16;
-  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -19,14 +17,9 @@
   height: 92px;
 }
 .company-link {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: 1px solid #afb1b8;
+  @include border: 1px solid #afb1b8;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centered();
   background-color: #ffffff;
   transition: border-color var(--temporary-function);
   &:hover,

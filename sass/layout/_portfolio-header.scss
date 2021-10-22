@@ -29,9 +29,7 @@
 }
 .portfol-link {
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
+  @include font(500, 14px, 0.02em);
   text-decoration: none;
   position: relative;
   padding-top: 32px;

@@ -6,10 +6,8 @@
 
 .btn {
   font-style: inherit;
-  font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.06em;
+  @include font(700, 16px, 0.06em);
   box-shadow: var(--box-shadow-btn);
   border-radius: var(--btn-b-radius);
   border: 0;

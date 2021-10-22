@@ -28,9 +28,7 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centered();
   border: 1px solid rgba(136, 90, 90, 0.1);
   border-radius: 50%;
   background-color: var(--primary-white-color);
