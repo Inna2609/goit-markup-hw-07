@@ -309,6 +309,10 @@ summary {
   --primary-white-color: #ffffff;
   --secondary-darkgray-color: #2f303a;
   --third-title-color: #f5f4fa;
+  --box-shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --btn-b-radius: 4px;
+  --br-list: 0px 0px 4px 4px;
+  --temporary-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p,
@@ -395,8 +399,8 @@ body {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--temporary-function);
+  transition: color var(--temporary-function);
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -454,8 +458,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--temporary-function);
+  transition: color var(--temporary-function);
 }
 
 .contact-mail-icon {
@@ -539,9 +543,9 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  -webkit-box-shadow: var(--box-shadow-btn);
+          box-shadow: var(--box-shadow-btn);
+  border-radius: var(--btn-b-radius);
   border: 0;
   padding: 10px 32px;
   min-width: 200px;
@@ -555,8 +559,8 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity var(--temporary-function), visibility var(--temporary-function);
+  transition: opacity var(--temporary-function), visibility var(--temporary-function);
 }
 
 .backdrop.is-hidden {
@@ -574,10 +578,10 @@ body {
   background-color: var(--primary-white-color);
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity var(--temporary-function), -webkit-transform var(--temporary-function);
+  transition: opacity var(--temporary-function), -webkit-transform var(--temporary-function);
+  transition: transform var(--temporary-function), opacity var(--temporary-function);
+  transition: transform var(--temporary-function), opacity var(--temporary-function), -webkit-transform var(--temporary-function);
 }
 
 .backdrop.is-hidden .modal {
@@ -588,8 +592,8 @@ body {
 
 .close-icon {
   fill: #000000;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill var(--temporary-function);
+  transition: fill var(--temporary-function);
 }
 
 .close-button {
@@ -734,7 +738,7 @@ body {
   margin-left: 30px;
   -ms-flex-preferred-size: calc(100% / 4 - 30px);
       flex-basis: calc(100% / 4 - 30px);
-  border-radius: 0px 0px 4px 4px;
+  border-radius: var(--br-list);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -788,8 +792,8 @@ body {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill var(--temporary-function);
+  transition: fill var(--temporary-function);
 }
 
 .icon-link:hover .social-icon,
@@ -812,8 +816,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ffffff;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color var(--temporary-function);
+  transition: background-color var(--temporary-function);
 }
 
 .icon-link:hover, .icon-link:focus {
@@ -865,8 +869,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ffffff;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color var(--temporary-function);
+  transition: border-color var(--temporary-function);
 }
 
 .company-link:hover, .company-link:focus {
@@ -875,8 +879,8 @@ body {
 
 .company-icon {
   fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill var(--temporary-function);
+  transition: fill var(--temporary-function);
 }
 
 .company-link:hover .company-icon,
@@ -939,8 +943,8 @@ body {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--temporary-function);
+  transition: color var(--temporary-function);
 }
 
 .footer-contact:hover, .footer-contact:focus {
@@ -976,8 +980,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color var(--temporary-function);
+  transition: background-color var(--temporary-function);
 }
 
 .footer-icon-link:hover, .footer-icon-link:focus {
@@ -1084,8 +1088,8 @@ body {
   bottom: 11px;
   left: 12px;
   fill: var(--primary-text-color);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill var(--temporary-function);
+  transition: fill var(--temporary-function);
 }
 
 .text-container {
@@ -1112,8 +1116,8 @@ body {
   outline: none;
   cursor: pointer;
   color: var(--secondary-text-color);
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color var(--temporary-function);
+  transition: border-color var(--temporary-function);
 }
 
 .comment:focus {
@@ -1125,8 +1129,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--temporary-function);
+  transition: color var(--temporary-function);
 }
 
 .comment:-ms-input-placeholder {
@@ -1134,8 +1138,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--temporary-function);
+  transition: color var(--temporary-function);
 }
 
 .comment::-ms-input-placeholder {
@@ -1143,8 +1147,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--temporary-function);
+  transition: color var(--temporary-function);
 }
 
 .comment::placeholder {
@@ -1152,8 +1156,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--temporary-function);
+  transition: color var(--temporary-function);
 }
 
 .comment:focus {
@@ -1243,14 +1247,14 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  -webkit-box-shadow: var(--box-shadow-btn);
+          box-shadow: var(--box-shadow-btn);
+  border-radius: var(--btn-b-radius);
   border: 0;
   padding: 10px 55px;
   min-width: 200px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color var(--temporary-function);
+  transition: background-color var(--temporary-function);
 }
 
 .send-button:hover {
@@ -1279,9 +1283,9 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  -webkit-box-shadow: var(--box-shadow-btn);
+          box-shadow: var(--box-shadow-btn);
+  border-radius: var(--btn-b-radius);
   border: 0;
   padding: 10px 32px;
   min-width: 200px;
@@ -1386,8 +1390,8 @@ input::placeholder {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--temporary-function);
+  transition: color var(--temporary-function);
 }
 
 .portfol-link:hover, .portfol-link:focus {
@@ -1424,8 +1428,8 @@ input::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--temporary-function);
+  transition: color var(--temporary-function);
 }
 
 .header-link:hover, .header-link:focus {
@@ -1455,10 +1459,10 @@ input::placeholder {
   cursor: pointer;
   color: var(--primary-text-color);
   background-color: var(--third-title-color);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color var(--temporary-function), color var(--temporary-function), -webkit-box-shadow var(--temporary-function);
+  transition: background-color var(--temporary-function), color var(--temporary-function), -webkit-box-shadow var(--temporary-function);
+  transition: background-color var(--temporary-function), color var(--temporary-function), box-shadow var(--temporary-function);
+  transition: background-color var(--temporary-function), color var(--temporary-function), box-shadow var(--temporary-function), -webkit-box-shadow var(--temporary-function);
 }
 
 .filter-button:hover, .filter-button:focus {
@@ -1474,7 +1478,7 @@ input::placeholder {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  border-radius: 4px;
+  border-radius: var(--btn-b-radius);
   border: 0;
   padding: 6px 22px;
   min-width: 73px;
@@ -1516,10 +1520,10 @@ input::placeholder {
 .gallery-link {
   display: block;
   text-decoration: none;
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-box-shadow var(--temporary-function);
+  transition: -webkit-box-shadow var(--temporary-function);
+  transition: box-shadow var(--temporary-function);
+  transition: box-shadow var(--temporary-function), -webkit-box-shadow var(--temporary-function);
 }
 
 .gallery-link:hover, .gallery-link:focus {
@@ -1553,10 +1557,10 @@ input::placeholder {
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(101%);
           transform: translateY(101%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform var(--temporary-function);
+  transition: -webkit-transform var(--temporary-function);
+  transition: transform var(--temporary-function);
+  transition: transform var(--temporary-function), -webkit-transform var(--temporary-function);
 }
 
 .gallery-link:focus .overlay-text {
@@ -1616,8 +1620,8 @@ input::placeholder {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color var(--temporary-function);
+  transition: color var(--temporary-function);
 }
 
 .address-contact:hover, .address-contact:focus {
