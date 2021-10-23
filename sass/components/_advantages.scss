@@ -1,10 +1,15 @@
-.section__list {
+.container__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+.advantage-list {
   display: flex;
 }
-.section__item:not(:last-child) {
+.advantage-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.section__icon {
+.advantage-list__icon {
   display: flex;
   height: 120px;
   width: 100%;
@@ -14,21 +19,16 @@
   justify-content: center;
   align-items: center;
 }
-.section__heading {
+.advantage-list__heading {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--primary-text-color);
   margin-bottom: 10px;
 }
-.section__paragraph {
+.advantage-list__paragraph {
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);
   width: 270px;
-}
-.section__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
 }

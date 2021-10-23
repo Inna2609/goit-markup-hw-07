@@ -5,16 +5,17 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.activity__item:not(:last-child) {
-  margin-right: 30px;
-}
-.activity__list {
+.activity-list {
   display: flex;
 }
+.activity-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .activity__container {
   position: relative;
 }
-.activity__paragraph {
+.activity-list__paragraph {
   position: absolute;
   width: 100%;
   height: 70px;
