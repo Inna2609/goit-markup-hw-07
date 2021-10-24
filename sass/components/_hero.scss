@@ -17,11 +17,9 @@
 
 .hero__title {
   color: var(--primary-white-color);
-  font-weight: 900;
-  font-size: 44px;
+  @include font(900, 44px, 0.06em);
   line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
   max-width: 696px;
@@ -35,12 +33,10 @@
 }
 .btn {
   font-style: inherit;
-  font-weight: 700;
-  font-size: 16px;
+  @include font(700, 16px, 0.06em);
   line-height: 1.87;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  box-shadow: var(--box-shadow-btn);
+  border-radius: var(--btn-b-radius);
   border: 0;
   padding: 10px 32px;
   min-width: 200px;

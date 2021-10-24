@@ -1,6 +1,7 @@
 @import './base/fonts';
 @import './base/normalize';
 @import './utils/vars';
+@import './utils/mixins';
 @import './base/reset';
 @import './utils/hidden';
 @import './base/section';
@@ -19,4 +20,4 @@
 @import './components/portfolio-header';
 @import './components/portfolio-filter';
 @import './components/portfolio-gallery';
-@import './utils/mixins';
+

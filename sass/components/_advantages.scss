@@ -10,14 +10,12 @@
   margin-right: 30px;
 }
 .advantage-list__icon {
-  display: flex;
+  @include centered();
   height: 120px;
   width: 100%;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
 }
 .advantage-list__heading {
   font-weight: 700;

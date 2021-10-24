@@ -3,11 +3,6 @@
   align-items: $align;
   justify-content: $jc;
 }
-@mixin block($block, $w: 100%, $h: 100%) {
-  display: $block;
-  width: $w;
-  height: $h;
-}
 @mixin font($weight, $size, $spacing) {
   font-weight: $weight;
   font-size: $size;
