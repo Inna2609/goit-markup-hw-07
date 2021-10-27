@@ -1,11 +1,5 @@
-.work {
+.section__team {
   background-color: var(--third-title-color);
-}
-.container__title {
-  @include font(700, 36px, 0.03em);
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
 }
 .team-cards {
   display: flex;
@@ -26,7 +20,7 @@
   padding: 30px 0;
   text-align: center;
 }
-.card-content__name {
+.card-content__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -34,7 +28,7 @@
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
-.card-content__work {
+.card-content__text {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;

@@ -17,9 +17,6 @@
   padding-bottom: 25px;
   align-items: center;
 }
-.list {
-  display: flex;
-}
 .page-logo__color {
   color: var(--title-text-color);
 }
@@ -27,8 +24,11 @@
   display: flex;
   align-items: center;
 }
-
+.site-nav {
+  display: flex;
+}
 .site-nav__link {
+  text-decoration: none;
   color: var(--primary-text-color);
   @include font(500, 14px, 0.02em);
   position: relative;
@@ -43,13 +43,6 @@
 
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.link {
-  text-decoration: none;
-  &.current-page {
-    color: var(--accent-color);
-  }
 }
 
 .current-page::after {
@@ -68,18 +61,18 @@
   display: flex;
   margin-left: auto;
   align-items: center;
-  & .link {
-    color: var(--secondary-text-color);
-    @include font(500, 14px, 0.02em);
-    padding: 32px 0px 32px 0px;
-    display: inline-flex;
-    align-self: start;
-    justify-content: center;
-    align-items: center;
-    transition: color var(--temporary-function);
-  }
 }
-
+.contacts__link {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  @include font(500, 14px, 0.02em);
+  padding: 32px 0px 32px 0px;
+  display: inline-flex;
+  align-self: start;
+  justify-content: center;
+  align-items: center;
+  transition: color var(--temporary-function);
+}
 .contacts__mail {
   margin-right: 10px;
   width: 16px;
